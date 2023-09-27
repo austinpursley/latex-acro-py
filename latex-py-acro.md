@@ -1,6 +1,8 @@
 # Organizing and Combining LaTeX Acronyms/Glossary Entries with Python (glossaries package)
 ## Introduction
-Problem: you use LaTeX for developing your document and you use the [glossaries](https://www.ctan.org/pkg/glossaries) package for defining acronym and glossary entries. You organize the entries into .tex files for each projects, e.g., "Acronyms.tex", "Glossary.tex". However, you've ended up with multiple versions of these .tex files from multiple projects and now you need ALL the unique acronyms in one file for a new project. How do you go about doing that? You could manually do this, but that could get tedious if they're are a lot of differences between files. Instead, you could use Python to automate the task. In addition, the entries can be organized along the way.
+Problem: 
+
+You use LaTeX for developing your documents and you use the [glossaries](https://www.ctan.org/pkg/glossaries) package for defining acronym and glossary entries. You organize the entries into .tex files for each projects, e.g., "Acronyms.tex", "Glossary.tex". However, you've ended up with multiple versions of these .tex files from multiple projects and now you need ALL the unique entries in one file for a new project. How do you go about doing that? You could manually do this, but that could get tedious if they're are a lot of differences between files. Instead, you could use Python to automate the task. In addition, the entries can be organized along the way.
 
 ## Set-up
 Going to use acronyms in this project, but they could also be glossary entries as the glossaries package handles both nearly the same. 
@@ -589,6 +591,6 @@ with open('Acronyms.tex', 'w') as f:
 
 
 ## Conclusions
-I can take this Acronyms.tex file and plop it into my Overleaf+LaTeX file and optimize it from there. This script especially becomes handy when you want to combine several different large (200+ entry) acronyms lists floating around.
+I can take this Acronyms.tex file and plop it into my Overleaf+LaTeX project and optimize it from there. This script especially becomes handy when you want to combine several different large (200+ entry) acronyms lists floating around.
 
 This little project also highlights one of the benefits of building LaTeX documents, which is how you can automate the manipulation of plain text inputs.
